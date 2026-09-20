@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enchère - Formulaire</title>
+  <link rel="stylesheet" href="./css/propose.css">
+	<script src="propose.php"></script>
+
+</head>
+<body>
+  <form>
+    <fieldset>
+      <legend>Enchère</legend>
+
+      <label for="cin">cin :</label>
+      <input type="text" id="c" name="c">
+      <br>
+
+      <label for="password">password :</label>
+      <input type="password" id="p" name="p">
+      <br>
+
+      <label for="id_prod">id Prod :</label>
+      <input type="text" id="ip" name="id_prod">
+      <br>
+
+      <label for="somme">Somme à ajouter :</label>
+      <input type="range" id="so" name="so" min="1" max="100" step="1" value="1" onChange="aff()">
+      <span id="s" name="s">1 $</span>
+      <br>
+
+      <input type="submit" value="Modifier">
+      <input type="reset" value="Annuler">
+    </fieldset>
+  </form>
+
+	
+
+  <script>
+    // Update the label in front of the range input when value changes
+    const rangeInput = document.getElementById('somme');
+    const valueDisplay = document.getElementById('sommeValue');
+
+    rangeInput.addEventListener('input', function() {
+      valueDisplay.textContent = this.value + ' $';
+    });
+  </script>
+</body>
+</html>

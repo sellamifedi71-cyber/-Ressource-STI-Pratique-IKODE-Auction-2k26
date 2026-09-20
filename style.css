@@ -1,0 +1,82 @@
+html , body{
+    height: 99%;
+}
+
+header{
+    border: 2px dashed black;
+    height: 20%;
+    width: 20%;
+    text-align: center;
+    float: left;
+}
+img{animation-name: ani;animation-iteration-count: infinite;animation-delay: 2s;animation-duration: 5s;animation-direction: reverse}
+@keyframes anim{
+	0%{
+		
+		filter: blur(0px) grayscale(0);
+	}
+	30%{
+		filter: blur(5px) grayscale(1);
+	}
+	100%{
+		filter: grayscale(1);
+	}
+	
+	
+}
+nav a{transition: margin-top 2s 2s}
+nav a:hover{margin-top: 10px}
+img{filter: blur(1);
+	filter: blur(10px) grayscale(1);
+
+}
+
+header img{
+    height: 100%;
+}
+
+main{
+    float: right;
+    border: 2px dashed black;
+    height: 100%;
+    width: 78%;
+}
+
+nav{
+    border: 2px dashed black;
+    height: 60%;
+    margin: 2% 0px;
+    width: 20%;
+    text-align: center;
+    float: left;
+}
+
+
+footer{
+    border: 2px dashed black;
+    width: 20%;
+    text-align: center;
+    float: left;
+    font-size: 26px;
+    font-weight: bolder;
+    color: gray;
+    padding: 20px 0px;
+}
+
+
+a{
+    display: inline-block;
+    border: 2px solid #5AB334;
+    width: 50%;
+    color: #5AB334;
+    text-decoration: none;
+    padding: 20px 40px;
+    font-weight: bold;
+    margin-top: 30%;
+    border-radius: 10px;
+}
+
+iframe{
+    height: 100%;
+    width: 100%;
+}

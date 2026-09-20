@@ -1,0 +1,88 @@
+ body {
+      font-family: system-ui, sans-serif;
+      padding: 30px;
+    }
+
+    form {
+      display: inline-block;
+      border-radius: 12px;
+    }
+
+    fieldset {
+      display: inline-block;
+      border-radius: 10px;
+      padding: 20px;
+      border: 1px solid #aaa;
+    }
+
+    legend {
+      font-size: 1.5rem;
+      padding: 0 10px;
+    }
+
+    label {
+      display: inline-block;
+      font-size: 1rem;
+    }
+
+    label[for="cin"],
+    label[for="password"],
+    label[for="id_prod"] {
+      width: 100px;
+    }
+
+    label[for="somme"] {
+      width: 140px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      display: inline-block;
+      padding: 6px 8px;
+      margin: 6px 0;
+      border-radius: 6px;
+      border: 1px solid #aaa;
+      font-size: 1rem;
+    }
+
+    input[type="range"] {
+      display: inline-block;
+      width: 200px;
+      margin: 6px 0;
+      vertical-align: middle;
+    }
+
+    #sommeValue {
+      display: inline-block;
+      margin-left: 10px;
+      padding: 4px 10px;
+      border-radius: 6px;
+      border: 1px solid #aaa;
+      background: #f5f5f5;
+      font-size: 1rem;
+      min-width: 50px;
+      text-align: center;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+      display: inline-block;
+      padding: 8px 20px;
+      margin: 16px 8px 0 0;
+      border-radius: 30px;
+      font-size: 1rem;
+      cursor: pointer;
+      border: 1px solid #888;
+      background: #f0f0f0;
+    }
+
+    input[type="submit"] {
+      background: #4a7c59;
+      color: white;
+      border: none;
+    }
+
+    input[type="reset"] {
+      background: #e0e0e0;
+    }
+
