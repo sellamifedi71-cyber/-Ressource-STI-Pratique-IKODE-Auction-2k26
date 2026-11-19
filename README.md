@@ -11,7 +11,7 @@ Application PHP/MySQL permettant de consulter des lots, se connecter avec un com
 
 ## Installation locale
 1. Démarrer Apache et MySQL avec XAMPP/WAMP.
-2. Créer la base `ikode_auction` et importer `DB/ikode_auction.sql`.
+2. Créer la base `fedi_auctions` et importer `DB/fedi_auctions.sql`.
 3. Exécuter une seule fois `DB/migration.sql` pour agrandir la colonne de mot de passe.
 4. Vérifier les paramètres dans `config.php`.
 5. Ouvrir `index.php` depuis le serveur local.
@@ -23,6 +23,6 @@ Le dump SQL contient des comptes d’exemple avec des mots de passe historiques 
 PHP 8+, MySQL/MariaDB, HTML et CSS.
 
 ## Limites
-Projet pédagogique, sans paiement réel, vérification d’identité ni processus de modération des lots. Le nom de base de données historique reste `ikode_auction` pour compatibilité avec le dump existant.
+Projet pédagogique, sans paiement réel, vérification d’identité ni processus de modération des lots. Le nom de base de données historique reste `fedi_auctions` pour compatibilité avec le dump existant.
 
 Brand: Fedi Auctions.
